@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body, h1, h2, p, ul, li, address {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f1e3;
+    }
+
+    header {
+        background-color: #3d2516;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        font-family: 'Pacifico', cursive;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+        border: 1px solid #ffffff;
+        padding: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    #destaques {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .produto {
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 30%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .produto img {
+        max-width: 100%;
+    }
+
+    .preco {
+        font-weight: bold;
+        color: #3d2516;
+    }
+
+    #sobre-nos, #contato {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background-color: #3d2516;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            font-size: 1.5em;
+        }
+
+        #destaques .produto {
+            width: 45%;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Café Delícia ☕</h1>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <h1 class="menu">Menu</h1>
+    <section id="destaques">
+        <div class="produto">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG" alt="Café Especial">
+            <h2>Café Especial</h2>
+            <p>Uma xícara de café deliciosamente encorpada.</p>
+            <p class="preco">R$ 5,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://www.receiteria.com.br/wp-content/uploads/bolo-de-chocolate-rapido-e-molhadinho.jpg" alt="Bolo de Chocolate">
+            <h2>Bolo de Chocolate</h2>
+            <p>Um pedaço de bolo de chocolate feito na hora.</p>
+            <p class="preco">R$ 4,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://media.istockphoto.com/id/1256670482/pt/foto/turkey-sandwich-with-tomato-and-lettuce.jpg?s=612x612&w=0&k=20&c=MLirHAQZLFdYoFfhV34QFbOYDfGY1Emm3K_FV28jNuQ=" alt="Sanduíche de Frango">
+            <h2>Sanduíche de Frango</h2>
+            <p>Um sanduíche recheado com frango fresco e vegetais.</p>
+            <p class="preco">R$ 7,50</p>
+        </div>
+    </section>
+
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Conheça a Café Delícia, sua cafeteria favorita desde 2004. Nós nos dedicamos a fornecer produtos de qualidade e atendimento excepcional aos nossos clientes.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <address>
+            <p>Endereço: Rua da Cafeteria, 2804</p>
+            <p>Telefone: (85) 9 9206-1914</p>
+            <p>E-mail: contato@cafedelicia.com</p>
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Café Delícia</p>
+    </footer>
+</body>
+</html>
